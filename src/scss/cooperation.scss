@@ -102,19 +102,19 @@
   }
 
   &__descr--first {
-    background-image: url("/img/svg/cooperation-net.svg");
+    background-image: url("../img/svg/cooperation-net.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 25px;
   }
   &__descr--second {
-    background-image: url("/img/svg/cooperation-case.svg");
+    background-image: url("../img/svg/cooperation-case.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 25px;
   }
   &__descr--third {
-    background-image: url("/img/svg/cooperation-git.svg");
+    background-image: url("../img/svg/cooperation-git.svg");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 25px;
@@ -179,7 +179,7 @@
 
 .term {
   padding-left: 109px;
-  background-image: url("/img/cooperation-term-bg.webp");
+  background-image: url("../img/cooperation-term-bg.webp");
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 77px;

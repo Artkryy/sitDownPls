@@ -36,7 +36,7 @@
 
 .content {
   padding-top: 31px;
-  padding-bottom: 39px;
+  padding-bottom: 41px;
   &__inner {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -71,11 +71,12 @@
   }
 
   &__descr {
-    margin-bottom: 104px;
+    margin-bottom: 105px;
   }
 
   &__description {
     margin: 0;
+    max-width: 100%;
     font-size: 14px;
     line-height: 180%;
   }
@@ -161,52 +162,63 @@
   }
 
   &__specifications {
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
     width: 100%;
   }
 }
 
 .specifications {
-  &__list {
-    display: block;
-    font-size: 14px;
-    line-height: 180%;
+  font-size: 14px;
+  line-height: 165%;
+
+  &__table-body {
+    width: 100%;
   }
 
   &__item {
-    display: block;
+    display: table-row;
   }
 
   &__name {
-    margin-right: -50%;
-    width: 51.7%;
+    width: 52.4%;
+    text-align: left;
     vertical-align: top;
-    overflow: hidden;
-    display: inline-block;
-    letter-spacing: normal;
-    line-height: 180%;
+    font-weight: 400;
+    line-height: 165%;
+    color: var(--color-grey);
   }
 
-  &__name::after {
-    content: "";
+  &__name-decor {
+    position: relative;
     display: inline-block;
+    vertical-align: bottom;
     width: 100%;
-    margin: 0 -99% 0 3px;
-    vertical-align: baseline;
+  }
+
+  &__cell {
+    position: relative;
+    z-index: 1;
+    background: var(--color-white);
+  }
+
+  &__name-decor::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 6px;
     border-bottom: 1px dashed #888;
   }
 
   &__prop {
-    display: inline-block;
-    letter-spacing: normal;
-    padding-left: 3px;
-    margin-left: 49.8%;
+    width: 50%;
+    text-align: left;
     text-wrap: nowrap;
-    width: 47%;
     vertical-align: bottom;
-  }
-
-  &__name {
-    color: var(--color-grey);
   }
 }
 
@@ -227,7 +239,17 @@
   }
 }
 
-.item {
+.rating-list {
+  &__item:nth-child(1) .product__subtitle {
+    max-width: 100%;
+  }
+
+  &__item:nth-child(3) .product__subtitle {
+    max-width: 100%;
+  }
+}
+
+.product {
   &__subtitle {
     margin-bottom: 22px;
   }

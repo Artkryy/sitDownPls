@@ -5,7 +5,7 @@
 // Header
 
 .header {
-  padding-bottom: 31px;
+  padding-bottom: 30px;
   &__search {
     margin-bottom: 22px;
   }
@@ -142,7 +142,7 @@
     left: 0;
     width: 20px;
     height: 20px;
-    background-image: url("/img/svg/chekbox.svg");
+    background-image: url("../img/svg/chekbox.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -204,7 +204,7 @@
 .banner-card {
   padding: 225px 80px 30px 30px;
   min-height: 360px;
-  background-image: url("/img/catalog-banner-card.webp");
+  background-image: url("../img/catalog-banner-card.webp");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -237,9 +237,9 @@
   }
 }
 
-.item {
+.product {
   &__subtitle {
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
 
   &__price {
@@ -260,10 +260,6 @@
   &__list {
     display: flex;
     gap: 16px;
-  }
-
-  &__item--768 {
-    display: none;
   }
 
   &__numb {
